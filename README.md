@@ -4,7 +4,7 @@
 member functions to:
  Calculate the total salary as the sum of basic salary and bonus.
  Display the employee details along with the total salary.
-Create a class named WeatherReport that holds a daily weather report with data
+3. Create a class named WeatherReport that holds a daily weather report with data
 member's day_of_month, hightemp, lowtemp, amount_rain and amount_snow. Use
 different types of constructors to initialize the objects. Also include a function that
 prompts the user and sets values for each field so that you can override the default values.
