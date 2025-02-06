@@ -32,7 +32,7 @@ class employee
                   cout<<"enter employee id";
                   cin>> emp.id;
                   cout<<"enter employee name";
-                   cin.ingnore();
+                   cin.ignore();
                    getline(cin, emp.name);
                   cin>>emp.name;
                   cout<<"enter basic salary";
