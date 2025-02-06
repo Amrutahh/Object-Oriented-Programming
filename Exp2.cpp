@@ -1,50 +1,47 @@
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
+
 class employee
 {
-  private:
-    char empname[30];
-    int empid;
-    float basic_salary;
-    float bonus;
-public:
-    void get_emp_details()
-    {
-    cout<<"enter employee name:";
-    cin>>empid;
-    cout<<"enter employee basic salary";
-    cin>>basic_salary;
-    cout<<"enter the bonus:";
-    cin>>bonus;
-    }
-    double calculatetotalsalary()
-    {
-    return basic_salary+bonus;
-    }
-    void displayEmployeeDetails()
-    {
-        cout<<"* Employee Details **"<<endl;
+    public:
+        int id;
+        string name;
+        float basic_salary;
+        float bonus;
 
-        cout << "Employee Name: " << empname << endl;
 
-        cout << "Employee ID: " << empid << endl;
-
-        cout << "Basic Salary: Rs." << basic_salary << endl;
-
-        cout << "Bonus: Rs." << bonus << endl;
-
-cout << "Total Salary: Rs." << calculatetotalsalary() << endl;
-cout<<"***********";
+        float calculatetotalsalary()
+        {
+            return basic_salary + bonus;
         }
-        };
+        void display()
+        {
+            cout<<"employee id:"<<id<<endl;
+            cout<<"employee name:"<<name<<endl;
+            cout<<"basic salary"<<basic_salary<<endl;
+            cout<<"bonus"<<bonus<<endl;
+            cout<<"total salary"<<calculatetotalsalary()<<endl;
+        }
+};
 
-int main() {
 
-employee emp1;
+                int main()
+              {
+                 employee emp;
+                  cout<<"enter employee id";
+                  cin>> emp.id;
+                  cout<<"enter employee name";
+                   cin.ingnore();
+                   getline(cin, emp.name);
+                  cin>>emp.name;
+                  cout<<"enter basic salary";
+                  cin>>emp.basic_salary;
+                  cin>>emp.basic_salary;
+                  cout<<"enter bonus";
+                  cin>>emp.bonus;
 
-emp1.get_emp_details();
+                  emp.display();
 
-emp1.displayEmployeeDetails();
-
-return 0;
-}
+                  return 0;
+              }
